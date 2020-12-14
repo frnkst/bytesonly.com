@@ -2,7 +2,6 @@ import tinytime from 'tinytime'
 import Link from 'next/link'
 import Head from 'next/head'
 import getAllPostPreviews from '@/getAllPostPreviews'
-import twitterCard from '@/img/twitter-card.jpg'
 
 const posts = getAllPostPreviews()
 
@@ -17,22 +16,18 @@ export default function Home() {
         <meta name="twitter:creator" content="@tailwindcss" />
         <meta name="twitter:title" content="Blog – Tailwind CSS" />
         <meta name="twitter:description" content="News content from the Tailwind CSS team." />
-        <meta name="twitter:image" content={`https://blog.tailwindcss.com${twitterCard}`} />
         <meta property="og:url" content="https://blog.tailwindcss.com" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Blog – Tailwind CSS" />
         <meta property="og:description" content="News content from the Tailwind CSS team." />
-        <meta property="og:image" content={`https://blog.tailwindcss.com${twitterCard}`} />
-        <title>Bytesonly</title>
+        <title>bytesonly</title>
         <meta name="description" content="News content from the Tailwind CSS team." />
       </Head>
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
         <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          Latest
+          bytesonly.
         </h1>
-        <p className="text-lg leading-7 text-gray-500">
-          All the latest Tailwind CSS news, straight from the team.
-        </p>
+        <p className="text-lg leading-7 text-gray-500">coding stuff</p>
       </div>
       <ul className="divide-y divide-gray-200">
         {posts.map(({ link, module: { default: Component, meta } }) => {
