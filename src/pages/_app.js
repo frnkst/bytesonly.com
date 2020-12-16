@@ -17,9 +17,6 @@ export default function App({ Component, pageProps }) {
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </Head>
       <SectionContainer>
-        <Header />
-      </SectionContainer>
-      <SectionContainer>
         <main>
           <Component {...pageProps} />
         </main>
