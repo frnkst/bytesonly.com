@@ -3,15 +3,15 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 class InlineStylesHead extends Head {
-  getCssLinks() {
-    return this.__getInlineStyles()
+  getCssLinks({ allFiles }) {
+    return this.__getInlineStyles(allFiles)
   }
 
-  __getInlineStyles() {
+  __getInlineStyles(allFiles) {
     const { assetPrefix, files } = this.context
-    if (!files || files.length === 0) return null
+    if (!allFiles || allFiles.length === 0) return null
 
-    return files
+    return allFiles
       .filter((file) => /\.css$/.test(file))
       .map((file) => (
         <style
