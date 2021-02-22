@@ -20,7 +20,7 @@ const tokenClassNames = {
 }
 
 module.exports = withBundleAnalyzer({
-  pageExtensions: ['js', 'jsx', 'mdx'],
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   experimental: {
     modern: true,
   },
@@ -83,8 +83,8 @@ module.exports = withBundleAnalyzer({
             ...mdx,
             createLoader(function (src) {
               const content = [
-                'import Post from "@/components/Post"',
-                'export { getStaticProps } from "@/getStaticProps"',
+                'import Post from "../../../src/components/Post"',
+                'export { getStaticProps } from "../../../src/getStaticProps"',
                 src,
                 'export default (props) => <Post meta={meta} {...props} />',
               ].join('\n')

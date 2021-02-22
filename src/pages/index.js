@@ -1,7 +1,7 @@
 import tinytime from 'tinytime'
 import Link from 'next/link'
 import Head from 'next/head'
-import getAllPostPreviews from '@/getAllPostPreviews'
+import getAllPostPreviews from '../getAllPostPreviews'
 
 const posts = getAllPostPreviews()
 

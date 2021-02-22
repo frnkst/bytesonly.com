@@ -1,9 +1,9 @@
-import '@/css/tailwind.css'
+import '../css/tailwind.css'
 import Head from 'next/head'
-import Header from '@/components/Header'
-import SectionContainer from '@/components/SectionContainer'
+import { AppProps } from 'next/app'
+import SectionContainer from '../components/SectionContainer'
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="antialiased">
       <Head>

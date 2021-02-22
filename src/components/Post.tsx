@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import PageTitle from '@/components/PageTitle'
+import PageTitle from './PageTitle'
 import tinytime from 'tinytime'
 import Link from 'next/link'
 import { useRouter } from 'next/router'

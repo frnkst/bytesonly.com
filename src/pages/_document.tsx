@@ -8,7 +8,7 @@ class InlineStylesHead extends Head {
   }
 
   __getInlineStyles(allFiles) {
-    const { assetPrefix, files } = this.context
+    const { assetPrefix } = this.context
     if (!allFiles || allFiles.length === 0) return null
 
     return allFiles
