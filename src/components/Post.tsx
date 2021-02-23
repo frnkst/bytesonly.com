@@ -52,10 +52,6 @@ export default function Post({ meta, children, posts }) {
           </div>
         </div>
       </header>
-      don't purge
-      <div className="text-code-green invisible"></div>
-      <div className="text-code-blue invisible"></div>
-      <div className="text-code-red invisible"></div>
       <div
         className="divide-y xl:divide-y-0 divide-gray-200 xl:grid xl:grid-cols-4 xl:col-gap-6 pb-16 xl:pb-20"
         style={{ gridTemplateRows: 'auto 1fr' }}
