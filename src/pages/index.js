@@ -12,16 +12,16 @@ export default function Home() {
     <div className="divide-y divide-gray-200">
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@tailwindcss" />
-        <meta name="twitter:creator" content="@tailwindcss" />
-        <meta name="twitter:title" content="Blog – Tailwind CSS" />
-        <meta name="twitter:description" content="News content from the Tailwind CSS team." />
-        <meta property="og:url" content="https://blog.tailwindcss.com" />
+        <meta name="twitter:site" content="@bytesonly" />
+        <meta name="twitter:creator" content="@bytesonly" />
+        <meta name="twitter:title" content="bytesonly" />
+        <meta name="twitter:description" content="Bytesonly Blog" />
+        <meta property="og:url" content="https://bytesonly.com" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Blog – Tailwind CSS" />
-        <meta property="og:description" content="News content from the Tailwind CSS team." />
+        <meta property="og:title" content="bytesonly" />
+        <meta property="og:description" content="Bytesonly Blog" />
         <title>bytesonly</title>
-        <meta name="description" content="News content from the Tailwind CSS team." />
+        <meta name="description" content="Bytesonly Blog" />
       </Head>
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
         <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
