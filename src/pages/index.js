@@ -39,7 +39,7 @@ export default function Home() {
                 bytesonly.com
               </h1>
               <p className="text-lg text-gray-500">
-                some code and some other stuff
+                maximum call stack size exceeded
               </p>
             </div>
             <ul className="divide-y divide-gray-200">
