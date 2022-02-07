@@ -5,24 +5,24 @@ import { Feed } from 'feed'
 
 import { getAllPosts } from '../src/getAllPostPreviews'
 
-const siteUrl = 'https://blog.tailwindcss.com'
+const siteUrl = 'https://bytesonly.com'
 
 const feed = new Feed({
-  title: 'Tailwind CSS Blog',
-  description: 'All the latest Tailwind CSS news, straight from the team.',
+  title: 'Bytesonly.com',
+  description: 'coding stuff',
   id: siteUrl,
   link: siteUrl,
   language: 'en',
   image: `${siteUrl}/favicon-32x32.png`,
   favicon: `${siteUrl}/favicon.ico`,
-  copyright: `All rights reserved ${new Date().getFullYear()}, Tailwind Labs`,
+  copyright: `All rights reserved ${new Date().getFullYear()}, Bytesonly.com`,
   feedLinks: {
     rss: `${siteUrl}/feed.xml`,
     json: `${siteUrl}/feed.json`,
     atom: `${siteUrl}/atom.xml`,
   },
   author: {
-    name: 'Adam Wathan',
+    name: 'Frank',
     link: 'https://twitter.com/@adamwathan',
   },
 })
@@ -36,7 +36,7 @@ getAllPosts().forEach(({ link, module: { meta, default: Content } }) => {
   const html = ReactDOMServer.renderToStaticMarkup(mdx)
   const postText = `<p><em>(The post <a href="${siteUrl + link}">${
     meta.title
-  }</a> appeared first on <a href="${siteUrl}">Tailwind CSS Blog</a>.)</em></p>`
+  }</a> appeared first on <a href="${siteUrl}">bytesonly.com</a>.)</em></p>`
   feed.addItem({
     title: meta.title,
     id: meta.title,

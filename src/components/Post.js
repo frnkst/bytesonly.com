@@ -20,10 +20,10 @@ export default function Post({ meta, children, posts }) {
           <main>
             <article className="py-16">
               <Head>
-                <title>{meta.title} – Tailwind CSS</title>
+                <title>{meta.title} – Bytesonly</title>
                 <meta name="twitter:site" content="@tailwindcss" />
                 <meta name="twitter:creator" content="@tailwindcss" />
-                <meta name="twitter:title" content={`${meta.title} – Tailwind CSS`} />
+                <meta name="twitter:title" content={`${meta.title} – Bytesonly.com`} />
                 <meta name="twitter:description" content={meta.description} />
                 {meta.image ? (
                   <>
@@ -47,7 +47,7 @@ export default function Post({ meta, children, posts }) {
                   content={`https://blog.tailwindcss.com${router.pathname}`}
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content={`${meta.title} – Tailwind CSS`} />
+                <meta property="og:title" content={`${meta.title} – Bytesonly.com`} />
                 <meta property="og:description" content={meta.description} />
                 <meta property="og:image" content={`https://blog.tailwindcss.com${meta.image}`} />
                 <meta name="description" content={meta.description}></meta>
@@ -120,16 +120,16 @@ export default function Post({ meta, children, posts }) {
         <main>
           <article className="xl:divide-y xl:divide-gray-200">
             <Head>
-              <title>{meta.title} – Tailwind CSS</title>
+              <title>{meta.title} – bytesonly.com</title>
               <meta name="twitter:card" content="summary_large_image" />
-              <meta name="twitter:site" content="@tailwindcss" />
-              <meta name="twitter:creator" content="@tailwindcss" />
-              <meta name="twitter:title" content={`${meta.title} – Tailwind CSS`} />
+              <meta name="twitter:site" content="@bytesonly" />
+              <meta name="twitter:creator" content="@bytesonly" />
+              <meta name="twitter:title" content={`${meta.title} – Bytesonly`} />
               <meta name="twitter:description" content={meta.description} />
               <meta name="twitter:image" content={`https://blog.tailwindcss.com${meta.image}`} />
               <meta property="og:url" content={`https://blog.tailwindcss.com${router.pathname}`} />
               <meta property="og:type" content="article" />
-              <meta property="og:title" content={`${meta.title} – Tailwind CSS`} />
+              <meta property="og:title" content={`${meta.title} – Bytesonly`} />
               <meta property="og:description" content={meta.description} />
               <meta property="og:image" content={`https://blog.tailwindcss.com${meta.image}`} />
               <meta name="description" content={meta.description}></meta>

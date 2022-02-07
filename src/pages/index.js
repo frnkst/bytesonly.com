@@ -23,16 +23,16 @@ export default function Home() {
               <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:site" content="@tailwindcss" />
               <meta name="twitter:creator" content="@tailwindcss" />
-              <meta name="twitter:title" content="Blog – Tailwind CSS" />
-              <meta name="twitter:description" content="News content from the Tailwind CSS team." />
+              <meta name="twitter:title" content="Bytesonly.com" />
+              <meta name="twitter:description" content="Coding stuff" />
               <meta name="twitter:image" content={`https://blog.tailwindcss.com${twitterCard}`} />
               <meta property="og:url" content="https://blog.tailwindcss.com" />
               <meta property="og:type" content="article" />
-              <meta property="og:title" content="Blog – Tailwind CSS" />
-              <meta property="og:description" content="News content from the Tailwind CSS team." />
+              <meta property="og:title" content="Bytesonly.com" />
+              <meta property="og:description" content="Coding stuff" />
               <meta property="og:image" content={`https://blog.tailwindcss.com${twitterCard}`} />
               <title>bytesonly.com</title>
-              <meta name="description" content="News content from the Tailwind CSS team." />
+              <meta name="description" content="Coding stuff" />
             </Head>
             <div className="pt-6 pb-8 space-y-2 md:space-y-5">
               <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl md:text-[4rem] md:leading-[3.5rem]">
