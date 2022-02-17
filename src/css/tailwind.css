@@ -4,5 +4,26 @@
 
 @tailwind components;
 @tailwind utilities;
+@tailwind typography;
 
 @import './prism.css';
+
+.prose a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #374151;
+}
+.prose a:after {
+  content: "";
+  background: hotpink;
+  opacity: 60%;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  width: calc(100% + 5px);
+  height: 50%;
+  z-index: -1;
+  transform: rotate(-1.6deg);
+  border-radius: 2px;
+}
