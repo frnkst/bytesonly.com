@@ -39,7 +39,7 @@ export default function Home() {
                 bytesonly.com
               </h1>
               <p className="text-lg text-gray-500">
-                maximum call stack size exceeded
+                coding blog
               </p>
             </div>
             <ul className="divide-y divide-gray-200">
@@ -69,10 +69,10 @@ export default function Home() {
                         <div className="text-base font-medium">
                           <Link href={link}>
                             <a
-                              className="text-teal-600 hover:text-teal-700"
+                              className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500"
                               aria-label={`Read "${meta.title}"`}
                             >
-                              Read more &rarr;
+                              Read more
                             </a>
                           </Link>
                         </div>
