@@ -12,8 +12,6 @@ import React, { useState, useEffect } from 'react'
 const postDateTemplate = tinytime('{dddd}, {MMMM} {DD}, {YYYY}')
 
 
-
-
 export default function Post({ meta, children, posts }) {
   const router = useRouter()
   useEffect(() => {
