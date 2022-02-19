@@ -7,11 +7,26 @@ import { MDXProvider } from '@mdx-js/react'
 import Header, { TailwindMark } from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
 import smallCard from '@/img/twitter-card-small.jpg'
+import React, { useState, useEffect } from 'react'
 
 const postDateTemplate = tinytime('{dddd}, {MMMM} {DD}, {YYYY}')
 
+
+
+
 export default function Post({ meta, children, posts }) {
   const router = useRouter()
+  useEffect(() => {
+    let script = document.createElement("script");
+    let anchor = document.getElementById("inject-comments-for-uterances");
+    script.setAttribute("src", "https://utteranc.es/client.js");
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async", true);
+    script.setAttribute("repo", "frnkst/bytesonly.com");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute( "theme", "github-light");
+    anchor.appendChild(script);
+  })
 
   if (meta.private) {
     return (
@@ -184,6 +199,8 @@ export default function Post({ meta, children, posts }) {
                 <div className="max-w-none pt-10 pb-8">
                   <MDXProvider>{children}</MDXProvider>
                 </div>
+                <div id="inject-comments-for-uterances"></div>
+
                 {meta.footer && (
                   <div className="pt-6 pb-16" dangerouslySetInnerHTML={{ __html: meta.footer }} />
                 )}
@@ -198,7 +215,7 @@ export default function Post({ meta, children, posts }) {
                         Discuss this on GitHub &rarr;
                       </a>
                     </p>
-                  </div>
+                                      </div>
                 )}
               </div>
               <footer className="text-sm font-medium divide-y divide-gray-200 xl:col-start-1 xl:row-start-2">
