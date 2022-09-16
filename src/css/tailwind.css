@@ -9,21 +9,26 @@
 @import './prism.css';
 
 .prose a {
-  position: relative;
-  overflow: hidden;
   text-decoration: none;
-  color: #374151;
 }
-.prose a:after {
-  content: "";
-  background: hotpink;
-  opacity: 60%;
-  position: absolute;
-  left: -5px;
-  top: 50%;
-  width: calc(100% + 5px);
-  height: 50%;
-  z-index: -1;
-  transform: rotate(-1.6deg);
-  border-radius: 2px;
+.prose a {
+  background:
+      linear-gradient(
+          to right,
+          rgba(100, 200, 200, 1),
+          rgba(100, 200, 200, 1)
+      ),
+      linear-gradient(
+          to right,
+          rgb(175, 149, 234, 1),
+          rgb(175, 149, 234, 1)
+      );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.prose a:hover {
+  background-size: 0 30px, 100% 30px;
 }
